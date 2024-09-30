@@ -83,6 +83,18 @@ const VoiceAssistant = () => {
       speak(`Fetching weather details for ${city}.`);
       getWeather(city);
     } 
+    else if(message.includes("open whatsapp")){
+      speak("Opening whatsapp..")
+      window.open("whatsapp://")
+     }
+     else if(message.includes("open telegram")){
+      speak("Opening telegram..")
+      window.open("telegram://")
+     }
+    else if(message.includes("open calculator")){
+      speak("Opening calculator....")
+      window.open("calculator://")
+     }
     else if (message.includes("what is your name") || message.includes("what's your name")) {
       speak("I am Kabira created by Vishal Mani Tiwari");
     }
